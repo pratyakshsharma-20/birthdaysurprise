@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- LOADER -->
+<!-- ========================= -->
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        <div class="gift-loader">
+            🎁
+        </div>
+
+        <h1>
+            Preparing Your Surprise...
+        </h1>
+
+        <div class="loading-bar">
+
+            <div class="progress"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ========================= -->
+<!-- PASSWORD -->
+<!-- ========================= -->
+
+<section id="passwordScreen">
+
+    <div class="password-card">
+
+        <h2>
+            🔒 Private Birthday Surprise
+        </h2>
+
+        <p>
+
+            Enter Your Date Of Birth
+
+        </p>
+
+        <input
+
+            id="passwordInput"
+
+            type="password"
+
+            placeholder="DDMMYYYY"
+
+        >
+
+        <button id="unlockBtn">
+
+            Unlock ❤️
+
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FLOATING HEARTS -->
+<!-- ========================= -->
+
+<div class="hearts">
+
+    <span>❤️</span>
+    <span>💕</span>
+    <span>💖</span>
+    <span>💗</span>
+    <span>🤍</span>
+    <span>💘</span>
+    <span>💝</span>
+    <span>🧿</span>
+
+</div>
+<!-- ========================= -->
+<!-- BALLOONS -->
+<!-- ========================= -->
+
+
+
+<section
+
+    id="hero"
+
+    class="hero"
+
+    style="display:none;"
+
+>
+
+    <div class="hero-card">
+
+        <h1>
+
+            Happiest Birthday ❤️
+
+        </h1>
+
+        <h2>
+
+            BEHEN ✨
+
+        </h2>
+
+        <p>
+
+            Some people become bestfriends...
+
+            <br><br>
+
+            Some become Family...
+
+            <br><br>
+
+            <strong>
+
+                You are both. ❤️
+
+            </strong>
+
+        </p>
+
+        <button id="startBtn">
+
+            🎁 Open Your Surprise
+
+        </button>
+
+    </div>
+
+    <audio
+
+        id="bgMusic"
+
+        loop
+
+    >
+
+        <source
+
+            src="music/birthday-song.mp3"
+
+            type="audio/mpeg"
+
+        >
+
+    </audio>
+
+</section>
+
+<!-- ========================= -->
+<!-- GALLERY -->
+<!-- ========================= -->
+
+<section
+
+    id="gallery"
+
+    style="display:none;"
+
+>
+
+    <h2>
+
+        Our Beautiful Memories ❤️
+
+    </h2>
+
+    <p class="gallery-subtitle">
+
+        Every picture has a beautiful story...
+
+    </p>
+
+    <div class="slider">
+
+        <button id="prevBtn">
+
+            ⬅
+
+        </button>
+
+        <div class="slide">
+
+            <img
+
+                id="slideImage"
+
+                src="images/photo1.jpg"
+
+                alt="Memory"
+
+            >
+
+            <p id="caption">
+
+                Every Memory With You Is Special ❤️
+
+            </p>
+
+            <div id="counter">
+
+                1 / 6
+
+            </div>
+
+        </div>
+
+        <button id="nextBtn">
+
+            ➡
+
+        </button>
+
+    </div>
+
+    <button id="letterBtn">
+
+        💌 Read My Letter
+
+    </button>
+
+</section>
+<!-- ========================= -->
+<!-- LETTER -->
+<!-- ========================= -->
+
+<section id="letter" style="display:none;">
+
+    <div class="letter-paper">
+
+        <h2>💌 A Letter For You</h2>
+
+        <div id="letterText"></div>
+
+        <button id="continueBtn">
+            Continue ❤️
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- TIMELINE -->
+<!-- ========================= -->
+
+<section id="timeline" style="display:none;">
+
+    <h2>❤️ Our Journey ❤️</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <span>👶</span>
+            <h3>Childhood</h3>
+            <p>
+                From silly fights to becoming best friends.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <span>😂</span>
+            <h3>Crazy Memories</h3>
+            <p>
+                Every laugh with you became a beautiful memory.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <span>💖</span>
+            <h3>Forever</h3>
+            <p>
+                No matter what happens, you'll always be my favourite sister.
+            </p>
+        </div>
+
+    </div>
+
+    <button id="giftBtn">
+        🎁 One Last Surprise
+    </button>
+
+</section>
+
+<!-- ========================= -->
+<!-- GIFT SECTION -->
+<!-- ========================= -->
+
+<section id="giftSection" style="display:none;">
+
+    <h2>🎁 One Last Gift For You</h2>
+
+    <p>Click the gift to open your final surprise ❤️</p>
+
+    <div id="giftBox">
+        🎁
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FINAL MESSAGE -->
+<!-- ========================= -->
+
+<section id="finalMessage" style="display:none;">
+
+    <div class="final-card">
+
+        <h1>❤️ Happy Birthday ❤️</h1>
+
+        <h2>My Best Sister ✨</h2>
+
+        <p>
+
+            Thank you for always being there.
+
+            <br><br>
+
+            Thank you for supporting me,
+            believing in me,
+            and making every memory special.
+
+            <br><br>
+
+            I wish you endless happiness,
+            success,
+            good health,
+            and lots of smiles.
+
+            <br><br>
+
+            ❤️ I Love You So Much ❤️
+
+        </p>
+
+        <h3>
+            — Made with ❤️ by Pratyaksh
+        </h3>
+        <button id="memoryBtn">
+    🫙 Open Memory Jar
+</button>
+
+    </div>
+
+</section>
+<!-- ========================= -->
+<!-- MEMORY JAR -->
+<!-- ========================= -->
+
+<section id="memoryJar" style="display:none;">
+
+    <div class="memory-card">
+
+        <h2>🫙 Memory Jar ❤️</h2>
+
+        <p id="memoryText">
+            Click below to open a memory...
+        </p>
+
+        <button id="nextMemory">
+            💖 Next Memory
+        </button>
+
+    </div>
+
+</section>
+<!-- ========================= -->
+<!-- LAST SURPRISE -->
+<!-- ========================= -->
+
+<section id="lastSurprise" style="display:none;">
+
+    <div class="last-card">
+
+        <h2>✨ One Last Surprise...</h2>
+
+        <p id="lastText"></p>
+
+        <h3 id="theEnd" style="display:none;">
+            ❤️ THE END ❤️
+        </h3>
+
+    </div>
+
+</section>
+<!-- ========================= -->
+<!-- CONFETTI CANVAS -->
+<!-- ========================= -->
+
+<canvas id="confettiCanvas"></canvas>
+
+<!-- ========================= -->
+<!-- FIREWORKS CANVAS -->
+<!-- ========================= -->
+
+<canvas id="fireworks"></canvas>
+
+<!-- ========================= -->
+<!-- SPARKLE LAYER -->
+<!-- ========================= -->
+
+<div id="sparkles"></div>
+
+<!-- ========================= -->
+<!-- MUSIC BUTTON -->
+<!-- ========================= -->
+
+<button id="musicBtn" class="music-btn" style="display:none;">
+    🎵
+</button>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer id="footer" style="display:none;">
+
+    <p>
+        Made with ❤️ by Pratyaksh
+    </p>
+
+</footer>
+
+<!-- ========================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================= -->
+<!-- ========================= -->
+<!-- PHOTO MODAL -->
+<!-- ========================= -->
+
+<div id="photoModal">
+
+    <span id="closeModal">&times;</span>
+
+    <img id="modalImage" src="" alt="Photo">
+
+</div>
+<script src="script.js"></script>
+<!-- ===================================== -->
+<!-- CINEMATIC ENDING -->
+<!-- ===================================== -->
+
+<section id="cinematicEnding" style="display:none;">
+
+    <div class="ending-overlay">
+
+        <img
+            id="endingPhoto"
+            src="images/final-photo.jpg"
+            alt="Best Memory">
+
+        <h1 id="endingQuote">
+            No matter where life takes us...
+            <br><br>
+            You'll always be my favourite sister. ❤️
+            
+        </h1>
+
+        <p id="endingCredit">
+
+            Made With ❤️ By Pratyaksh
+
+        </p>
+
+    </div>
+
+</section>
+</body>
+</html>
